@@ -14,6 +14,9 @@ Abstract: simple typing game-->
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
 </head>
+<audio autoplay>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
 
 <body class="text-white">
     <header class="text-center p-3 mb-3">
@@ -28,7 +31,7 @@ Abstract: simple typing game-->
                     <span class="text-warning" id="seconds">5</span> Seconds:
                 </p>
                 <!-- displays the words from an array -->
-                <h2 class="display-2 mb-5" id="current-word">hello</h2>
+                <h2 class="display-2 mb-5" id="current-word">---</h2>
                 <input type="text" oncopy="return false" onpaste="return false" class="form-control form-control-lg"
                     placeholder="Start typing..." id="word-input" autofocus />
                 <h4 class="mt-3" id="message"></h4>
