@@ -87,7 +87,7 @@ function init() {
   setInterval(countdown, 1000);
   setInterval(checkStatus, 50);
 }
-
+//start the game once the window is loaded
 startMatch = () => {
   if (matchWords()) {
     isPlaying = true;
@@ -130,6 +130,7 @@ countdown = () => {
   timeDisplay.innerHTML = time;
 };
 
+//player status
 checkStatus = () => {
   if (!isPlaying && time === 0) {
     message.innerHTML = "You Lose!";
