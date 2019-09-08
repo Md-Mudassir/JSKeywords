@@ -11,6 +11,8 @@ const timeDisplay = document.querySelector("#time");
 const message = document.querySelector("#message");
 const seconds = document.querySelector("#seconds");
 
+
+//keywords array
 const words = [
   "abstract",
   "arguments",
@@ -111,6 +113,7 @@ matchWords = () => {
     return false;
   }
 };
+
 showWord = () => {
   const randIndex = Math.floor(Math.random() * words.length);
   currentWord.innerHTML = words[randIndex];
