@@ -11,7 +11,6 @@ const timeDisplay = document.querySelector("#time");
 const message = document.querySelector("#message");
 const seconds = document.querySelector("#seconds");
 
-
 //keywords array
 const words = [
   "abstract",
@@ -80,6 +79,7 @@ const words = [
   "yield"
 ];
 
+// initialization
 function init() {
   seconds.innerHTML = 5;
   showWord(words);
@@ -104,6 +104,7 @@ startMatch = () => {
   }
 };
 
+// function to match the input word
 matchWords = () => {
   if (wordInput.value === currentWord.innerHTML) {
     message.innerHTML = "Correct!";
@@ -119,6 +120,7 @@ showWord = () => {
   currentWord.innerHTML = words[randIndex];
 };
 
+// displays the remaining time
 countdown = () => {
   if (time > 0) {
     time--;
